@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dell.joynews.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/homeButton"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"
+            android:text="@string/home"/>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"
+            android:id="@+id/specialButton"
+            android:text="@string/special"/>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"
+            android:text="@string/latest"
+            android:id="@+id/latestButton"/>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"
+            android:text="@string/video"
+            android:id="@+id/videoButton"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_size"
+            android:text="@string/ctg"
+            android:id="@+id/chittagongButton"/>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeLayout">
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webView"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/joyTv"
+            android:icon="@mipmap/outline_star_black_18"
+            android:title="Joy TV" />
+        <item
+            android:id="@+id/rating"
+            android:icon="@mipmap/outline_star_black_18"
+            android:title="Rating" />
+        <item
+            android:id="@+id/moreApps"
+            android:icon="@mipmap/outline_favorite_black_18"
+            android:title="More Apps" />
+        <item
+            android:id="@+id/privacy"
+            android:icon="@mipmap/outline_info_black_18"
+            android:title="Privacy" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:icon="@mipmap/outline_info_black_18"
+                android:title="About" />
+            <item
+                android:id="@+id/contact_us"
+                android:icon="@mipmap/outline_info_black_18"
+                android:title="Contact us" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+        </menu>
+    </item>
+
+</menu>
